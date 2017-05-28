@@ -4,23 +4,96 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
+  <section class="intro">
+     <div class="image">
+        <img src="assets/images/logo.svg" alt="English Creative Center" />
+     </div>
+     <div>
+       <p>
+         Welcome to the ECC. We aim to introduce a creative hub here
+         in Hanoi for lovers of all types of art. Our school is
+         located in the Tay Ho district of Hanoi which is a hub
+         of creative activity.
+       </p>
+        <p>
+          Our teachers come from all over the world with a wealth of
+          experience ready to take  you from beginner to professional
+          in no time at all. The English Creative Centre currently
+          offers courses in Photography, DJing, Arts & Crafts, Fashion
+          and Videblogging. We will be adding more courses in the coming
+          months so watch this space!
+        </p>
+     </div>
+  </section>
+  <section class="whatwedo">
+    <h1>What we do</h1>
+    <h5>BEGINNER COURSES & PROFFESIONAL DESIGN SERVICES</h5>
+  </section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+  {% for course in site.courses %}
+    <section>
+      <div class="image" style="background-image: url('assets/images/{{ course.image }}');">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+      </div>
+      <article>
+        <h3>{{ course.title }}</h3>
+        {{ course.content }}
+        <a class="btn" href="#">Apply now</a>
+      </article>
+    </section>
+  {% endfor %}
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <section class="creative">
+      <article>
+        <h5>CREATIVE Center</h5>
+        <h2>Creative services</h2>
+        <p>
+          We are an international group of creative individuals,
+          brought together by an experienced team of industry focused
+          leads with strong backgrounds in project management and
+          product design. We work around the clock to bring you high quality, cost-effective branding, experience and product design solutions on-demand.
+        </p>
+        <ul>
+          <li>Project planning</li>
+          <li>Identity design</li>
+          <li>Editorial and multimedia</li>
+          <li>Photography and digital content</li>
+          <li>Web & mobile experiences</li>
+        </ul>
+        <a class="btn" href="">Download profile </a>
+      </article>
+      <div>
+        <img src="assets/images/creative.jpg" />
+      </div>
+  </section>
+
+  <section class="apply">
+    <div>
+      <h3>Apply for a course</h3>
+      <p>
+        Please fill in the form below and we will
+        contact you shortly to give you all the information you need
+      </p>
+
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdiNIjKKVdNQkrGpH8-4bsLcMw-rOWUQvkOcz_UOMMx-_xXjg/viewform?embedded=true" width="600" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
+  </section>
+  <section class="contact">
+    <div class="image" style="background-image: url('assets/images/map.jpg')">
+
+    </div>
+    <article>
+      <h3>Contact us directly</h3>
+      <ul>
+        <li><span class="icon"></span> {{site.address}}</li>
+        <li></li>
+        <li><span class="icon"></span> {{site.phone}}</li>
+        <li><span class="icon"></span> {{site.email}}</li>
+        <li></li>
+        <li><span class="icon"></span> {{site.facebook}}</li>
+
+      </ul>
+    </article>
+  </section>
 
 </div>
