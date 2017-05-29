@@ -26,8 +26,10 @@ layout: default
      </article>
   </section>
   <section class="whatwedo">
-    <h1>What we do</h1>
-    <h5>BEGINNER COURSES & PROFFESIONAL DESIGN SERVICES</h5>
+    <div class="fullwidth">
+      <h1>What we do</h1>
+      <h5>BEGINNER COURSES & PROFFESIONAL DESIGN SERVICES</h5>
+    </div>
   </section>
 
   {% for course in site.courses %}
@@ -38,12 +40,14 @@ layout: default
       <article>
         <h3>{{ course.title }}</h3>
         {{ course.content }}
-        <a class="btn" href="#">Apply now</a>
+        <a class="btn" href="#apply-form">Apply now</a>
       </article>
     </section>
   {% endfor %}
 
   <section class="creative">
+      <div class="image" style="background-image: url('assets/images/creative.jpg')">
+      </div>
       <article>
         <h5>CREATIVE  / Center</h5>
         <h2>Creative services</h2>
@@ -62,22 +66,17 @@ layout: default
         </ul>
         <a class="btn" href=""> Download profile </a>
       </article>
-      <div>
-        <img src="assets/images/creative.jpg" />
-      </div>
+
   </section>
 
-  <section class="apply">
+  <section class="apply" id="apply-form">
     <div>
-      <h3>Apply for a course</h3>
-      <p>
-        Please fill in the form below and we will
-        contact you shortly to give you all the information you need
-      </p>
-
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdiNIjKKVdNQkrGpH8-4bsLcMw-rOWUQvkOcz_UOMMx-_xXjg/viewform?embedded=true" width="600" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdiNIjKKVdNQkrGpH8-4bsLcMw-rOWUQvkOcz_UOMMx-_xXjg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" src="" scrolling="no" >Loading...</iframe>
     </div>
   </section>
+
+  <section class="spacer"></section>
+
   <section class="contact">
     <div class="image" style="background-image: url('assets/images/map.jpg')">
 
@@ -86,11 +85,29 @@ layout: default
       <h3>Contact us directly</h3>
       <ul>
         <li><span class="icon"></span> {{site.address}}</li>
-        <li></li>
+        <li>&nbsp;</li>
         <li><span class="icon"></span> {{site.phone}}</li>
         <li><span class="icon"></span> {{site.email}}</li>
-        <li></li>
-        <li><span class="icon"></span> {{site.facebook}}</li>
+        <li>&nbsp;</li>
+        <li>
+          <a href="{{site.facebook}}">
+          <span class="icon">
+            <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="#FFFFFF" fill-rule="evenodd">
+                    <g id="website" transform="translate(-554.000000, -4479.000000)" fill="#FFFFFF">
+                        <g id="creative-services" transform="translate(0.000000, 2720.000000)">
+                            <g id="Group-3">
+                                <path d="M569.117,1759 L554.883,1759 C554.395,1759 554,1759.395 554,1759.883 L554,1774.117 C554,1774.605 554.395,1775 554.883,1775 L562.546,1775 L562.546,1768.804 L560.46,1768.804 L560.46,1766.39 L562.546,1766.39 L562.546,1764.607 C562.546,1762.541 563.808,1761.417 565.652,1761.417 C566.535,1761.417 567.294,1761.481 567.515,1761.511 L567.515,1763.671 L566.235,1763.671 C565.235,1763.671 565.04,1764.151 565.04,1764.851 L565.04,1766.391 L567.43,1766.391 L567.12,1768.811 L565.04,1768.811 L565.04,1775 L569.117,1775 C569.605,1775 570,1774.605 570,1774.117 L570,1759.883 C570,1759.395 569.605,1759 569.117,1759" id="Shape" fill="#ffffff"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+          </span>
+          Facebook</a></li>
 
       </ul>
     </article>

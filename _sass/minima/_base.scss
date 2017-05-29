@@ -111,6 +111,10 @@ a {
     background: darken($brand-color-2, 5%);
   }
 
+  &:focus {
+    background: none;
+  }
+
   .social-media-list &:hover {
     text-decoration: none;
 
@@ -203,7 +207,7 @@ pre {
   vertical-align: middle;
 
   path {
-    fill: $grey-color;
+    fill: #ffffff;
   }
 }
 

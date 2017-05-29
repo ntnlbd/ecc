@@ -2,10 +2,10 @@ title: English Creative Center
 email: your-email@domain.com
 description:
 
-facebook: jekyllrb
-email:  jekyll
-address:
-phone:
+facebook: https://www.facebook.com/ecchanoi/
+email: englishcreativecentre@gmail.com
+address: 17B, ngach 32/53 An Duong, Tay&nbsp;Ho, Hanoi, Vietnam
+phone: 091 940 94 64
 
 # Server Config options
 livereload: true
