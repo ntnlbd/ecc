@@ -1,12 +1,14 @@
 title: English Creative Center
 email: your-email@domain.com
-description: 
+description:
 
 facebook: jekyllrb
 email:  jekyll
 address:
 phone:
 
+# Server Config options
+livereload: true
 
 collections:
   courses:

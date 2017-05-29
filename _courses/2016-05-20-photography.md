@@ -1,7 +1,7 @@
 ---
 layout: default
 image: photography.jpg
-title: Introduction to photography
+title: Photography
 ---
 
 - Weekly challenges
