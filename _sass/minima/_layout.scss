@@ -41,6 +41,10 @@ ul{
   font-weight: 400;
   padding: 0 $spacing-unit;
   line-height: 36px;
+
+  &:hover {
+    background: darken($brand-color-2, 5%);
+  }
 }
 
 /*-- -- -- header -- -- --*/
@@ -66,8 +70,27 @@ ul{
   }
 }
 
+/*-- -- -- wrapper-- -- --*/
+
+.wrapper {
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+  background: white;
+  @extend %clearfix;
 
 
+  @include media-query($on-laptop) {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+    margin: $spacing-unit * 2 0;
+
+  }
+}
+
+/*-- -- -- sections -- -- --*/
 
 section{
 
@@ -75,11 +98,10 @@ section{
     div:first-child{
       height: $spacing-unit * 12;
       text-align: center;
-      background-image: linear-gradient(-139deg, #F8FFF7 0%, #FFFFFF 86%);
+      background-image: url('../assets/images/logo.svg'), linear-gradient(-139deg, #F8FFF7 0%, #FFFFFF 86%);
+      background-position: center;
+      background-repeat: no-repeat;
 
-      img{
-        margin-top: 22%;
-      }
     }
 
     article{
@@ -126,6 +148,14 @@ section{
       margin: 0;
       padding: 0;
     }
+
+    a{
+      color: white;
+
+      &:hover{
+        background-color: none;
+      }
+    }
   }
 
   &.spacer{
@@ -134,6 +164,9 @@ section{
     display: block;
   }
 }
+
+
+/*-- -- -- section contents -- -- --*/
 
 .image{
   background-repeat: no-repeat;
@@ -148,43 +181,21 @@ article{
   padding: $spacing-unit * 2 $spacing-unit;
 }
 
+/*-- -- -- footer -- -- --*/
+
 footer{
   border-top: 4px solid $brand-color;
   padding-top: $spacing-unit / 2;
   padding-bottom: $spacing-unit / 2;
+  margin: $spacing-unit * 2 $spacing-unit;
   color: $brand-color;
 }
 
-.page-content {
-  padding: $spacing-unit 0;
-}
-
-
-
-@include media-query($on-laptop) {
-
-}
-
+/*-- -- -- tablet-- -- --*/
 @include media-query($on-palm) {
   section{
     display: flex;
     flex-wrap: wrap;
-
-
-    .image{
-      width: 50%;
-      height: 340px;
-    }
-
-    article{
-      width: 50%;
-      padding-left: $spacing-unit * 2;
-      padding-right: $spacing-unit * 2;
-
-      .btn{
-        max-width: 182px;
-      }
-    }
 
     &.intro{
       div{
@@ -235,6 +246,21 @@ footer{
     }
   }
 
+  .image{
+    width: 50%;
+    height: 340px;
+  }
+
+  article{
+    width: 50%;
+    padding-left: $spacing-unit * 2;
+    padding-right: $spacing-unit * 2;
+
+    .btn{
+      max-width: 182px;
+    }
+  }
+
   footer {
     display: flex;
     flex-wrap: wrap;
@@ -244,6 +270,28 @@ footer{
       &:nth-child(2){
         text-align: right;
       }
+    }
+  }
+
+}
+
+/*-- -- -- desktop -- -- --*/
+@include media-query($on-laptop) {
+  section{
+    &.intro{
+      height: 620px;
+
+      div:first-child{
+        height: auto;
+      }
+
+      article{
+        padding: $spacing-unit * 9 $spacing-unit * 5;
+      }
+    }
+    &.whatwedo{
+      height: $spacing-unit * 20;
+      padding: $spacing-unit * 7 $spacing-unit;
     }
   }
 }
