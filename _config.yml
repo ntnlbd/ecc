@@ -22,3 +22,10 @@ markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
+
+gems:
+  - jekyll-sitemap
+  - jekyll-autoprefixer
+  - jekyll-seo-tag
+  - jekyll-livereload
+  - jekyll-seo-tag
