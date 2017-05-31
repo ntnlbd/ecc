@@ -4,29 +4,35 @@ layout: default
 
 <div class="home">
 
-  <section class="intro">
+  <section id="intro" class="intro">
      <div class="logo"></div>
      <article>
+       <h2>
+         Hello!
+       </h2>
        <p>
-         Welcome to the ECC. We aim to introduce a creative hub here
-         in Hanoi for lovers of all types of art. Our school is
-         located in the Tay Ho district of Hanoi which is a hub
-         of creative activity.
+         Welcome to English Creative Center.
+         We are a multi-cultural powerhouse, located in the creative heart of Hanoi - Tay Ho District.
        </p>
-        <p>
-          Our teachers come from all over the world with a wealth of
-          experience ready to take  you from beginner to professional
-          in no time at all. The English Creative Centre currently
-          offers courses in Photography, DJing, Arts & Crafts, Fashion
-          and Videblogging. We will be adding more courses in the coming
-          months so watch this space!
-        </p>
+       <p>
+         <b>What:</b>
+       </p>
+       <p>
+         We aim to bring you the best in <a href="#courses">creative education</a> courses and <a href="#creative">design services</a> at minimal cost and high standard.
+       </p>
+       <p>
+         <b>How:</b>
+       </p>
+       <p>
+         Our members come from all over the world, with a wealth of experience and ready to take  you from beginner to professional, in no time at all. We currently offer courses in Photography, DJing, Arts & Crafts, Fashion and Video Blogging as well as a range of professional design services.
+       </p>
+
      </article>
   </section>
   <section class="whatwedo">
     <div class="fullwidth">
       <h1>What we do</h1>
-      <h5>BEGINNER COURSES & PROFFESIONAL DESIGN SERVICES</h5>
+      <h5 class="wow shake" data-wow-offset="200">BEGINNER COURSES & PROFFESIONAL DESIGN SERVICES</h5>
     </div>
   </section>
 
@@ -43,10 +49,11 @@ layout: default
     </section>
   {% endfor %}
 
-  <section class="creative">
-      <div class="image" style="background-image: url('assets/images/creative.jpg')">
+  <section id="creative" class="creative">
+
+      <div class="image wow fadeInLeft" data-wow-offset="300" style="background-image: url('assets/images/creative.jpg')">
       </div>
-      <article>
+      <article class="wow fadeInRight" data-wow-offset="300">
         <h5>CREATIVE  / Center</h5>
         <h2>Creative services</h2>
         <p>
@@ -64,10 +71,9 @@ layout: default
         </ul>
         <a class="btn" href=""> Download profile </a>
       </article>
-
   </section>
 
-  <section class="apply" id="apply-form">
+  <section id="apply" class="apply" id="apply-form">
     <div>
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdiNIjKKVdNQkrGpH8-4bsLcMw-rOWUQvkOcz_UOMMx-_xXjg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" src="" scrolling="no" >Loading...</iframe>
     </div>
@@ -75,7 +81,7 @@ layout: default
 
   <section class="spacer"></section>
 
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="image" style="background-image: url('assets/images/map.jpg')">
 
     </div>
