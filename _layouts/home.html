@@ -38,7 +38,7 @@ layout: default
 
   {% for course in site.courses %}
     <section>
-      <div class="image" style="background-image: url('assets/images/{{ course.image }}');">
+      <div class="image" style="background-image: url('{{site.url}}/assets/images/{{ course.image }}');">
 
       </div>
       <article>
@@ -51,7 +51,7 @@ layout: default
 
   <section id="creative" class="creative">
 
-      <div class="image wow fadeInLeft" data-wow-offset="300" style="background-image: url('assets/images/creative.jpg')">
+      <div class="image wow fadeInLeft" data-wow-offset="300" style="background-image: url('{{site.url}}/assets/images/creative.jpg')">
       </div>
       <article class="wow fadeInRight" data-wow-offset="300">
         <h5>CREATIVE  / Center</h5>
@@ -82,7 +82,7 @@ layout: default
   <section class="spacer"></section>
 
   <section id="contact" class="contact">
-    <div class="image" style="background-image: url('assets/images/map.jpg')">
+    <div class="image" style="background-image: url('{{site.url}}/assets/images/map.jpg')">
 
     </div>
     <article>

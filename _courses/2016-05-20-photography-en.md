@@ -2,6 +2,7 @@
 layout: default
 image: photography.jpg
 title: Photography
+lang: en
 ---
 
 - Weekly challenges

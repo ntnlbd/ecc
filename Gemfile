@@ -18,5 +18,4 @@ group :jekyll_plugins do
    gem 'jekyll-autoprefixer'
    gem 'jekyll-seo-tag'
    gem 'jekyll-livereload'
-   gem 'jekyll-seo-tag'
 end

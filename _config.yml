@@ -8,15 +8,13 @@ address: 17B, ngach 32/53 An Duong, Tay&nbsp;Ho, Hanoi, Vietnam
 phone: 091 940 94 64
 
 # Server Config options
+url: 127.0.0.1:4000
 livereload: true
 
 collections:
   courses:
     title: Courses
-    output: true
-  posts:
-    title: Posts
-    output: true
+    output: false
 
 markdown: kramdown
 exclude:
@@ -28,4 +26,3 @@ gems:
   - jekyll-autoprefixer
   - jekyll-seo-tag
   - jekyll-livereload
-  - jekyll-seo-tag

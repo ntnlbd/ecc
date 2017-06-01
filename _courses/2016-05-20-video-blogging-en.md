@@ -2,6 +2,7 @@
 layout: default
 image: video-blogging.jpg
 title: Video blogging
+lang: en
 ---
 
 - An introductory film course   

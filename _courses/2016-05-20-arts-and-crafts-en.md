@@ -2,6 +2,7 @@
 layout: default
 image: arts-and-crafts.jpg
 title: Arts & crafts
+lang: en
 ---
 
 - Discover new techniques
