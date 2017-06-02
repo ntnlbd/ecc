@@ -301,10 +301,13 @@ footer{
       padding: 0 $spacing-unit / 2;
       border-right: 1px solid lighten($brand-color, 22%);
 
-      &:last-child{
+      &:last-child, &:nth-child(4){
         border-right: none;
       }
 
+      &:nth-child(4){
+        margin-right: $spacing-unit * 3;
+      }
 
       a{
         color: lighten($brand-color, 22%);
@@ -313,6 +316,11 @@ footer{
         &:hover{
           transition: all 0.25s ease-in-out;
           color: darken($brand-color, 22%);
+          cursor: pointer;
+        }
+
+        &.active{
+          color: white;
         }
       }
     }
