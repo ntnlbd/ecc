@@ -21,6 +21,25 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/logo.svg
+
+ceo:
+  type: LocalBusiness
+
+image: /assets/images/logo.svg
+
+social:
+  name: English Creative Center
+  links:
+    https://www.facebook.com/ecchanoi/
+
+facebook:
+  publisher: English Creative Center
+
 gems:
   - jekyll-sitemap
   - jekyll-autoprefixer

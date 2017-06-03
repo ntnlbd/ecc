@@ -42,7 +42,7 @@ ul{
   padding: 0 $spacing-unit;
   line-height: 36px;
 
-  &:hover {
+  &:hover, &:focus {
     background: darken($brand-color-2, 5%);
   }
 }
@@ -353,6 +353,10 @@ footer{
     &.creative{
       justify-content: space-around;
 
+    }
+
+    &:nth-child(8) .image{
+      background-position: top;
     }
   }
 
