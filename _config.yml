@@ -1,15 +1,17 @@
 title: English Creative Center
 email: your-email@domain.com
-description:
+description: Creative Hub in Hanoi
 
-facebook: https://www.facebook.com/ecchanoi/
+facebook: "https://www.facebook.com/ecchanoi/"
 email: englishcreativecentre@gmail.com
 address: 17B, ngach 32/53 An Duong, Tay&nbsp;Ho, Hanoi, Vietnam
 phone: 091 940 94 64
 
 # Server Config options
-url: 127.0.0.1:4000
+url: www.ecchanoi.com
+destination: ../ecc-site/
 livereload: true
+
 
 collections:
   courses:

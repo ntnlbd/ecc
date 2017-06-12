@@ -12,16 +12,16 @@ layout: default
         <a href="#services">services</a>
       </li>
       <li>
-        <a href="#apply-form">apply</a>
+        <a href="#apply">apply</a>
       </li>
       <li>
         <a href="#contact">contact</a>
       </li>
       <li>
-        <a href="{{site.url}}/index.html">EN</a>
+        <a href="#" disabled>EN</a>
       </li>
       <li>
-        <a href="{{site.url}}/vn/index.html">VN</a>
+        <a href="vn/index.html">VN</a>
       </li>
     </ul>
   </div>
@@ -63,8 +63,13 @@ layout: default
   </section>
 
   {% for course in site.courses %}
-    <section>
-      <div class="image" style="background-image: url('{{site.url}}/assets/images/{{ course.image }}');">
+  {% if forloop.first %}
+    {% assign creative = "courses" %}
+    {% else %}
+    {% assign creative = "" %}
+  {% endif %}
+    <section  id="{{ creative }}">
+      <div class="image" style="background-image: url('/assets/images/{{ course.image }}');">
 
       </div>
       <article>
@@ -75,9 +80,9 @@ layout: default
     </section>
   {% endfor %}
 
-  <section id="creative" class="creative">
+  <section id="services" class="creative">
 
-      <div class="image wow fadeInLeft" data-wow-offset="300" style="background-image: url('{{site.url}}/assets/images/creative.jpg')">
+      <div class="image wow fadeInLeft" data-wow-offset="300" style="background-image: url('/assets/images/creative.jpg')">
       </div>
       <article class="wow fadeInRight" data-wow-offset="300">
         <h5>CREATIVE  / Center</h5>
@@ -95,7 +100,7 @@ layout: default
           <li>Photography and digital content</li>
           <li>Web & mobile experiences</li>
         </ul>
-        <a class="btn" href="{{site.url}}/assets/profile-c.pdf" download> Download profile </a>
+        <a class="btn" href="/assets/profile-c.pdf" download> Download profile </a>
       </article>
   </section>
 
@@ -108,7 +113,7 @@ layout: default
   <section class="spacer"></section>
 
   <section id="contact" class="contact">
-    <div class="image" style="background-image: url('{{site.url}}/assets/images/map.jpg')">
+    <div class="image" style="background-image: url('/assets/images/map.jpg')">
 
     </div>
     <article>
@@ -120,7 +125,7 @@ layout: default
         <li><span class="icon"></span> {{site.email}}</li>
         <li>&nbsp;</li>
         <li>
-          <a href="{{site.facebook}}">
+          <a href="https://www.facebook.com/ecchanoi/">
           <span class="icon">
             <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->

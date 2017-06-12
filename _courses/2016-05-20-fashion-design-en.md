@@ -6,7 +6,7 @@ lang: en
 ---
 
 - Fashion Sketching & color Experiments
-- Textile Désign
+- Textile Design
 - Tshirt painting
 - Accessory Making
 - Basics to sewing & embroidery
